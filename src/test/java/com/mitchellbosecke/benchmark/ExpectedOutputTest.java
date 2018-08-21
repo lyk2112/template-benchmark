@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.ParseException;
 import java.util.Locale;
 
 import org.junit.BeforeClass;
@@ -30,6 +31,13 @@ public class ExpectedOutputTest {
         Freemarker freemarker = new Freemarker();
         freemarker.setup();
         assertOutput(freemarker.benchmark());
+    }
+
+    @Test
+    public void testHttlOutput() throws IOException, TemplateException, ParseException {
+        Httl httl = new Httl();
+        httl.setup();
+        assertOutput(httl.benchmark());
     }
     
     @Test

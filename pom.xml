@@ -167,7 +167,11 @@
 			<scope>test</scope>
 			<version>${junit.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.github.httl</groupId>
+			<artifactId>httl</artifactId>
+			<version>1.0.11</version>
+		</dependency>
 	</dependencies>
 
 	<scm>
